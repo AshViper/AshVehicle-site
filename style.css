@@ -128,3 +128,14 @@ h3 {
   border-bottom: 1px solid #444;
   padding-bottom: 8px;
 }
+
+.slideshow img {
+  width: 600px; /* 固定幅 */
+  height: 400px; /* 固定高さ */
+  object-fit: cover; /* 縦横比を保ちつつ指定サイズにトリミング */
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+  transition: opacity 0.8s ease-in-out;
+  opacity: 1;
+  max-width: 100%; /* 横幅を親幅に合わせて縮小も可能に */
+}

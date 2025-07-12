@@ -7,31 +7,22 @@ menuToggle.addEventListener("click", () => {
   nav.classList.toggle("open");
 });
 
-// スライドショー
-fetch("image-list.php")
-  .then((res) => {
-    if (!res.ok) throw new Error("画像リストの取得に失敗しました");
-    return res.json();
-  })
-  .then((files) => {
-    if (!Array.isArray(files) || files.length === 0) {
-      imgElement.alt = "画像がありません";
-      return;
-    }
+// 画像ファイル名を手動で配列に記述
+const images = [
+  "images/image1.png",
+  "images/image1.png",
+  "images/image1.png",
+  // 必要に応じて増やしてください
+];
 
-    const images = files.map((file) => `images/${file}`);
-    let current = 0;
+let current = 0;
 
-    // 初回表示
-    imgElement.src = images[current];
-    current++;
+// 最初の画像を表示
+imgElement.src = images[current];
+current++;
 
-    setInterval(() => {
-      imgElement.src = images[current];
-      current = (current + 1) % images.length;
-    }, 3000);
-  })
-  .catch((error) => {
-    console.error(error);
-    imgElement.alt = "スライドショーの読み込みに失敗しました";
-  });
+// 3秒ごとに画像を切り替え
+setInterval(() => {
+  imgElement.src = images[current];
+  current = (current + 1) % images.length;
+}, 3000);
