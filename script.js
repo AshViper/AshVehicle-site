@@ -10,8 +10,8 @@ menuToggle.addEventListener("click", () => {
 // 画像ファイル名を手動で配列に記述
 const images = [
   "images/image1.png",
-  "images/image1.png",
-  "images/image1.png",
+  "images/image2.png",
+  "images/image3.png",
   // 必要に応じて増やしてください
 ];
 
