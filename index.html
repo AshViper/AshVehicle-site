@@ -3,103 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ダークサイト（ハンバーガーメニュー付き）</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: "Segoe UI", sans-serif;
-        background-color: #121212;
-        color: #e0e0e0;
-        line-height: 1.6;
-      }
-
-      header {
-        background-color: #1f1f1f;
-        padding: 1rem 2rem;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1000;
-        border-bottom: 1px solid #333;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      header h1 {
-        font-size: 1.5rem;
-        color: #ffffff;
-      }
-
-      nav {
-        display: flex;
-        gap: 1.5rem;
-      }
-
-      nav a {
-        color: #cccccc;
-        text-decoration: none;
-        transition: color 0.2s;
-      }
-
-      nav a:hover {
-        color: #ffffff;
-      }
-
-      .menu-toggle {
-        display: none;
-        flex-direction: column;
-        cursor: pointer;
-      }
-
-      .menu-toggle span {
-        background: #fff;
-        height: 3px;
-        margin: 4px 0;
-        width: 25px;
-        transition: 0.3s;
-      }
-
-      main {
-        padding: 6rem 2rem 4rem;
-        min-height: 80vh;
-      }
-
-      footer {
-        background-color: #1a1a1a;
-        color: #888888;
-        text-align: center;
-        padding: 1rem;
-        border-top: 1px solid #333;
-      }
-
-      /* スマホ向け */
-      @media (max-width: 768px) {
-        nav {
-          position: absolute;
-          top: 70px;
-          left: 0;
-          width: 100%;
-          background-color: #1f1f1f;
-          flex-direction: column;
-          align-items: center;
-          display: none;
-        }
-
-        nav.active {
-          display: flex;
-        }
-
-        .menu-toggle {
-          display: flex;
-        }
-      }
-    </style>
+    <title>ダークサイト</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -121,17 +26,43 @@
       <p>
         これはスマホ対応のハンバーガーメニュー付き、黒系ウェブサイトのテンプレートです。
       </p>
+
+      <!-- 写真スライドショー -->
+      <section class="slideshow">
+        <img id="slideshow-image" src="" alt="スライド画像" />
+      </section>
+
+      <!-- 追加紹介セクション -->
+      <section id="new-items">
+        <h3>新しく追加されたもの</h3>
+        <ul>
+          <li>新デザインのロゴ</li>
+          <li>ナビゲーション改善</li>
+          <li>ダークモード最適化</li>
+        </ul>
+      </section>
+
+      <!-- 課題セクション -->
+      <section id="issues">
+        <h3>現在の課題</h3>
+        <ul>
+          <li>スマホ表示で一部ずれが発生</li>
+          <li>読み込み速度の改善</li>
+        </ul>
+      </section>
+
+      <!-- 変更ログ -->
+      <section id="changelog">
+        <h3>変更ログ</h3>
+        <ul>
+          <li>2025/07/12 - サイト公開</li>
+          <li>2025/07/10 - ナビゲーション追加</li>
+        </ul>
+      </section>
     </main>
 
     <footer>&copy; 2025 ダークサイト. All rights reserved.</footer>
 
-    <script>
-      const menuToggle = document.getElementById("menu-toggle");
-      const nav = document.getElementById("nav");
-
-      menuToggle.addEventListener("click", () => {
-        nav.classList.toggle("active");
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
