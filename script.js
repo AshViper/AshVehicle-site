@@ -49,7 +49,7 @@ const translations = {
     "sidebar.new1": "Новый дизайн логотипа",
     "sidebar.new2": "Улучшения навигации",
     "sidebar.new3": "Оптимизация тёмной темы",
-    "sidebar.download": "Скачать для разработчиков",
+    "sidebar.download": "Скачать dev версию мода",
     "sidebar.issues": "Известные проблемы",
     "sidebar.issue1": "Проблемы с мобильной версткой",
     "sidebar.issue2": "Улучшение скорости загрузки",
@@ -172,12 +172,12 @@ menuToggle.addEventListener("click", () => {
 
 // Slideshow
 const images = [
-  "images/image1.png",
-  "images/image2.png",
-  "images/2025-07-29_20.02.33.png",
-  "images/2025-07-29_19.39.21.png",
-  "images/2025-07-29_18.46.40.png",
-  "images/2025-07-29_18.01.39.png",
+  "images/image1.webp",
+  "images/image2.webp",
+  "images/2025-07-29_20.02.33.webp",
+  "images/2025-07-29_19.39.21.webp",
+  "images/2025-07-29_18.46.40.webp",
+  "images/2025-07-29_18.01.39.webp",
 ];
 
 let currentSlide = 0;
@@ -238,6 +238,16 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "ArrowLeft") lightboxPrev.click();
   if (e.key === "ArrowRight") lightboxNext.click();
 });
+
+// Extract version from jar filename
+const downloadBtn = document.getElementById("download-btn");
+const downloadVersion = document.getElementById("download-version");
+if (downloadBtn && downloadVersion) {
+  const href = downloadBtn.getAttribute("href");
+  const filename = href.split("/").pop().replace(".jar", "");
+  const version = filename.replace("ashvehicle-", "");
+  downloadVersion.textContent = "v" + version;
+}
 
 // Init
 applyTranslations(detectLanguage());

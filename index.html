@@ -25,7 +25,7 @@
     />
     <meta
       property="og:image"
-      content="https://ashviper.github.io/AshVehicle-site/images/image1.png"
+      content="https://ashviper.github.io/AshVehicle-site/images/image1.webp"
     />
     <meta
       property="og:url"
@@ -41,21 +41,21 @@
     />
     <meta
       name="twitter:image"
-      content="https://ashviper.github.io/AshVehicle-site/images/image1.png"
+      content="https://ashviper.github.io/AshVehicle-site/images/image1.webp"
     />
 
     <!-- Theme -->
     <meta name="theme-color" content="#0f0f0f" />
 
-    <link rel="icon" type="image/png" href="images/ashvehicle.png" />
-    <link rel="apple-touch-icon" href="images/ashvehicle.png" />
+    <link rel="icon" type="image/webp" href="images/ashvehicle.webp" />
+    <link rel="apple-touch-icon" href="images/ashvehicle.webp" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <div class="header-content">
         <a href="#" class="logo">
-          <img src="images/ashvehicle.png" alt="AshVehicle" class="logo-icon" />
+          <img src="images/ashvehicle.webp" alt="AshVehicle" class="logo-icon" />
           <span>AshVehicle</span>
         </a>
         <div class="menu-toggle" id="menu-toggle">
@@ -145,7 +145,7 @@
         <div class="hero-image">
           <img
             id="slideshow-image"
-            src="images/image1.png"
+            src="images/image1.webp"
             alt="AshVehicle Screenshot"
           />
         </div>
@@ -164,35 +164,35 @@
           <section id="screenshots">
             <h3 data-i18n="screenshots.title">Screenshots</h3>
             <div class="gallery">
-              <div class="gallery-item" data-src="images/image1.png">
-                <img src="images/image1.png" alt="Screenshot 1" />
+              <div class="gallery-item" data-src="images/image1.webp">
+                <img src="images/image1.webp" alt="Screenshot 1" />
               </div>
-              <div class="gallery-item" data-src="images/image2.png">
-                <img src="images/image2.png" alt="Screenshot 2" />
-              </div>
-              <div
-                class="gallery-item"
-                data-src="images/2025-07-29_20.02.33.png"
-              >
-                <img src="images/2025-07-29_20.02.33.png" alt="Screenshot 3" />
+              <div class="gallery-item" data-src="images/image2.webp">
+                <img src="images/image2.webp" alt="Screenshot 2" />
               </div>
               <div
                 class="gallery-item"
-                data-src="images/2025-07-29_19.39.21.png"
+                data-src="images/2025-07-29_20.02.33.webp"
               >
-                <img src="images/2025-07-29_19.39.21.png" alt="Screenshot 4" />
+                <img src="images/2025-07-29_20.02.33.webp" alt="Screenshot 3" />
               </div>
               <div
                 class="gallery-item"
-                data-src="images/2025-07-29_18.46.40.png"
+                data-src="images/2025-07-29_19.39.21.webp"
               >
-                <img src="images/2025-07-29_18.46.40.png" alt="Screenshot 5" />
+                <img src="images/2025-07-29_19.39.21.webp" alt="Screenshot 4" />
               </div>
               <div
                 class="gallery-item"
-                data-src="images/2025-07-29_18.01.39.png"
+                data-src="images/2025-07-29_18.46.40.webp"
               >
-                <img src="images/2025-07-29_18.01.39.png" alt="Screenshot 6" />
+                <img src="images/2025-07-29_18.46.40.webp" alt="Screenshot 5" />
+              </div>
+              <div
+                class="gallery-item"
+                data-src="images/2025-07-29_18.01.39.webp"
+              >
+                <img src="images/2025-07-29_18.01.39.webp" alt="Screenshot 6" />
               </div>
             </div>
           </section>
@@ -240,11 +240,15 @@
               >Discord</a
             >
           </div>
-          <div class="sidebar-card">
+          <div class="sidebar-card download-card">
             <h4 data-i18n="sidebar.download">Dev Download</h4>
-            <a href="jar/ashvehicle-4.4dev-8.8-SNAPSHOT.jar" download
-              >ashvehicle-4.4dev-8.8-SNAPSHOT.jar</a
-            >
+            <a href="jar/ashvehicle-4.4dev-8.8-SNAPSHOT.jar" download class="download-btn" id="download-btn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+              </svg>
+              <span>Download .jar</span>
+            </a>
+            <span class="download-version" id="download-version"></span>
           </div>
         </aside>
       </div>
