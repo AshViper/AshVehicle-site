@@ -7,7 +7,8 @@ const translations = {
     "nav.vehicles": "Vehicles",
     "hero.tagline": "Minecraft vehicle mod",
     "about.title": "About",
-    "about.text": "AshVehicle adds various vehicles to Minecraft, allowing players to travel across the world in style.",
+    "about.text":
+      "AshVehicle adds various vehicles to Minecraft, allowing players to travel across the world in style.",
     "screenshots.title": "Screenshots",
     "changelog.title": "Changelog",
     "changelog.initial": "Initial release",
@@ -29,7 +30,7 @@ const translations = {
     "cat.bombers": "Bombers",
     "cat.ground": "Ground Vehicles",
     "cat.naval": "Naval / Other",
-    "cat.weapons": "Weapons (Missiles / Bombs)"
+    "cat.weapons": "Weapons (Missiles / Bombs)",
   },
   ru: {
     "nav.about": "О моде",
@@ -38,7 +39,8 @@ const translations = {
     "nav.vehicles": "Техника",
     "hero.tagline": "Мод на транспорт для Minecraft",
     "about.title": "О моде",
-    "about.text": "AshVehicle добавляет различные транспортные средства в Minecraft, позволяя игрокам путешествовать по миру со стилем.",
+    "about.text":
+      "AshVehicle добавляет различные транспортные средства в Minecraft, позволяя игрокам путешествовать по миру со стилем.",
     "screenshots.title": "Скриншоты",
     "changelog.title": "История изменений",
     "changelog.initial": "Первый релиз",
@@ -60,7 +62,7 @@ const translations = {
     "cat.bombers": "Бомбардировщики",
     "cat.ground": "Наземная техника",
     "cat.naval": "Морская техника",
-    "cat.weapons": "Оружие (Ракеты / Бомбы)"
+    "cat.weapons": "Оружие (Ракеты / Бомбы)",
   },
   ja: {
     "nav.about": "概要",
@@ -69,7 +71,8 @@ const translations = {
     "nav.vehicles": "車両",
     "hero.tagline": "Minecraft乗り物MOD",
     "about.title": "概要",
-    "about.text": "AshVehicleはMinecraftに様々な乗り物を追加し、プレイヤーがスタイリッシュに世界を旅することができます。",
+    "about.text":
+      "AshVehicleはMinecraftに様々な乗り物を追加し、プレイヤーがスタイリッシュに世界を旅することができます。",
     "screenshots.title": "スクリーンショット",
     "changelog.title": "変更履歴",
     "changelog.initial": "初回リリース",
@@ -91,8 +94,8 @@ const translations = {
     "cat.bombers": "爆撃機",
     "cat.ground": "地上車両",
     "cat.naval": "海軍 / その他",
-    "cat.weapons": "武器 (ミサイル / 爆弾)"
-  }
+    "cat.weapons": "武器 (ミサイル / 爆弾)",
+  },
 };
 
 const langNames = { en: "EN", ru: "RU", ja: "JA" };
@@ -102,12 +105,14 @@ function detectLanguage() {
   // Check saved preference
   const saved = localStorage.getItem("lang");
   if (saved && translations[saved]) return saved;
-  
+
   const lang = navigator.language || navigator.userLanguage;
   const code = lang.split("-")[0].toLowerCase();
-  
+
   // CIS countries
-  if (["ru", "uk", "be", "kk", "uz", "ky", "tg", "az", "hy", "ka"].includes(code)) {
+  if (
+    ["ru", "uk", "be", "kk", "uz", "ky", "tg", "az", "hy", "ka"].includes(code)
+  ) {
     return "ru";
   }
   // Japanese
@@ -121,7 +126,7 @@ function detectLanguage() {
 // Apply translations
 function applyTranslations(lang) {
   const t = translations[lang] || translations.en;
-  document.querySelectorAll("[data-i18n]").forEach(el => {
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
     if (t[key]) {
       el.textContent = t[key];
@@ -146,7 +151,7 @@ document.addEventListener("click", (e) => {
   }
 });
 
-langDropdown.querySelectorAll("button").forEach(btn => {
+langDropdown.querySelectorAll("button").forEach((btn) => {
   btn.addEventListener("click", () => {
     const lang = btn.getAttribute("data-lang");
     applyTranslations(lang);
@@ -166,7 +171,10 @@ menuToggle.addEventListener("click", () => {
 const images = [
   "images/image1.png",
   "images/image2.png",
-  "images/image3.png"
+  "images/2025-07-29_20.02.33.png",
+  "images/2025-07-29_19.39.21.png",
+  "images/2025-07-29_18.46.40.png",
+  "images/2025-07-29_18.01.39.png",
 ];
 
 let currentSlide = 0;
