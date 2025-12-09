@@ -449,6 +449,40 @@ main {
   text-align: center;
 }
 
+/* Contributors */
+.contributor-section {
+  margin-bottom: 1rem;
+}
+
+.contributor-section:last-child {
+  margin-bottom: 0;
+}
+
+.contributor-role {
+  font-size: 0.75rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.4rem;
+}
+
+.contributor-name {
+  font-size: 0.85rem;
+  color: #bbb;
+  padding: 0.3rem 0;
+}
+
+.contributor-link {
+  color: #7aa2f7;
+  text-decoration: none;
+  display: block;
+}
+
+.contributor-link:hover {
+  color: #9ec2ff;
+  text-decoration: underline;
+}
+
 .vehicle-legend {
   display: flex;
   flex-wrap: wrap;
