@@ -14,6 +14,7 @@
       { name: "₲ⱤɄ₦₲Ɇ ├┼┼┴┴┴┐" },
       { name: "xingyu⭐🐟" },
       { name: "Chryzoz" },
+      { name: "VellEagle" },
       { name: "Myo" }
     ]
   };
