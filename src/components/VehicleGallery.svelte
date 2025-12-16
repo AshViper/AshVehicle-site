@@ -22,6 +22,8 @@
     // Fighters
     'Su-34': '/AshVehicle-site/models/Su-34.gltf',
     'Su-33': '/AshVehicle-site/models/Su-33.gltf',
+    'Su-25': '/AshVehicle-site/models/su-25.gltf',
+    'Su-57': '/AshVehicle-site/models/su-57.gltf',
     'Mig-29': '/AshVehicle-site/models/mig-29.gltf',
     'JAS39E': '/AshVehicle-site/models/jas39e.gltf',
     'F-35': '/AshVehicle-site/models/F-35.gltf',
@@ -30,6 +32,11 @@
     'F-2': '/AshVehicle-site/models/F-2.gltf',
     'F-15': '/AshVehicle-site/models/F-15.gltf',
     'F-16': '/AshVehicle-site/models/F-16.gltf',
+    'F-22': '/AshVehicle-site/models/f-22.gltf',
+    'F-4': '/AshVehicle-site/models/f-4.gltf',
+    'Eurofighter': '/AshVehicle-site/models/eurofighter.gltf',
+    'J-20': '/AshVehicle-site/models/j-20.gltf',
+    'Potuzhnoflylet': '/AshVehicle-site/models/zelensky.gltf',
     // Bombers
     'B-2': '/AshVehicle-site/models/b-2.gltf',
     // Ground
@@ -38,6 +45,11 @@
     'M3A3 Bradley': '/AshVehicle-site/models/m3a3-bradley.gltf',
     'Gepard1A2': '/AshVehicle-site/models/gepard1a2.gltf',
     'Sapsan': '/AshVehicle-site/models/sapsan.gltf',
+    'Tos1 Sunlight': '/AshVehicle-site/models/tos.gltf',
+    'Pantsir S1': '/AshVehicle-site/models/pa_pantsir.gltf',
+    // Naval
+    'Zumwalt': '/AshVehicle-site/models/zumwalt.gltf',
+    'Rubber Boat': '/AshVehicle-site/models/rubber_boat.gltf',
     // Weapons
     'R-60': '/AshVehicle-site/models/r60.gltf',
     'CBU-87': '/AshVehicle-site/models/cbu87.gltf',
@@ -90,7 +102,10 @@
       { name: "F-15", status: "added" },
       { name: "Su-57", status: "remake" },
       { name: "F-16", status: "added" },
-      { name: "F-14", status: "planned" }
+      { name: "F-14", status: "planned" },
+      { name: "Eurofighter", status: "added" },
+      { name: "J-20", status: "added" },
+      { name: "Potuzhnoflylet", status: "added" }
     ],
     bombers: [
       { name: "B-2", status: "added" },
