@@ -60,7 +60,8 @@
     'Toilet Bomb': '/AshVehicle-site/models/toiletbomb.gltf',
     'Tomahawk': '/AshVehicle-site/models/Tomahawk.gltf',
     'JASSM-XR': '/AshVehicle-site/models/Jassm-xr.gltf',
-    'AGM-114': '/AshVehicle-site/models/agm114.gltf'
+    'AGM-114': '/AshVehicle-site/models/agm114.gltf',
+    'NuclearBomb': '/AshVehicle-site/models/nuclearbomb.gltf'
   };
   
   function open3DViewer(name) {
@@ -151,6 +152,7 @@
       { name: "JASSM-XR", status: "added" },
       { name: "Ballistic Missile", status: "planned" },
       { name: "Toilet Bomb", status: "added" },
+      { name: "NuclearBomb", status: "added" },
       { name: "X-101", status: "planned" }
     ]
   };
