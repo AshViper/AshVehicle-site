@@ -10,7 +10,7 @@
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.20.1-green.svg)](https://minecraft.net)
 [![Superb Warfare](https://img.shields.io/badge/Requires-Superb%20Warfare-blue.svg)](https://github.com/pofice/Superb-Warfare)
 
-[🌐 Website](https://ashviper.github.io/AshVehicle-site/) • [📥 Download](https://ashviper.github.io/AshVehicle-site/#download) • [💬 Discord](https://discord.gg/ashvehicle)
+[🌐 Website](https://ashviper.github.io/AshVehicle-site/) • [📥 Download](https://ashviper.github.io/AshVehicle-site/#download) • [💬 Discord](https://discord.gg/dp7XAy3nH3)
 
 </div>
 

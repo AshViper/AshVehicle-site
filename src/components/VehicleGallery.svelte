@@ -15,7 +15,7 @@
   // Available 3D models
   const available3DModels = {
     // Helicopters
-    'UH-60': '/AshVehicle-site/models/uh-60.gltf',
+    'MH-60M': '/AshVehicle-site/models/mh-60m.gltf',
     'V-22': '/AshVehicle-site/models/V-22.gltf',
     'AH-64': '/AshVehicle-site/models/AH-64.gltf',
     'RAH-66': '/AshVehicle-site/models/rah-66.gltf',
@@ -79,7 +79,6 @@
   // Status: added, remake, planned
   const vehicles = {
     helicopters: [
-      { name: "UH-60", status: "added" },
       { name: "MH-60M", status: "added" },
       { name: "Chinook", status: "planned" },
       { name: "KA-52", status: "planned" },
@@ -103,6 +102,10 @@
       { name: "Su-57", status: "remake" },
       { name: "F-16", status: "added" },
       { name: "F-14", status: "planned" },
+      { name: "F-100", status: "planned" },
+      { name: "F-104", status: "planned" },
+      { name: "Mig-21", status: "planned" },
+      { name: "Mig-19", status: "planned" },
       { name: "Eurofighter", status: "added" },
       { name: "J-20", status: "added" },
       { name: "Potuzhnoflylet", status: "added" }
