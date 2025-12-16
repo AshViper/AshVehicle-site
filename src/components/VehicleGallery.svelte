@@ -21,6 +21,7 @@
     'RAH-66': '/AshVehicle-site/models/rah-66.gltf',
     // Fighters
     'Su-34': '/AshVehicle-site/models/Su-34.gltf',
+    'Su-27': '/AshVehicle-site/models/Su-27.gltf',
     'Su-33': '/AshVehicle-site/models/Su-33.gltf',
     'Su-25': '/AshVehicle-site/models/su-25.gltf',
     'Su-57': '/AshVehicle-site/models/su-57.gltf',
@@ -90,8 +91,9 @@
       { name: "Su-34", status: "remake" },
       { name: "Su-33", status: "remake" },
       { name: "Su-25", status: "remake" },
+      { name: "Su-27", status: "added" },
       { name: "Mig-29", status: "remake" },
-      { name: "F-4", status: "remake" },
+      { name: "F-4", status: "added" },
       { name: "JAS39E", status: "remake" },
       { name: "F-35", status: "remake" },
       { name: "F-22", status: "added" },
