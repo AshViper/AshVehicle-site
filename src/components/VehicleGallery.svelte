@@ -27,7 +27,7 @@
     'Su-57': '/AshVehicle-site/models/su-57.gltf',
     'Mig-29': '/AshVehicle-site/models/mig-29.gltf',
     'JAS39E': '/AshVehicle-site/models/jas39e.gltf',
-    'F-35': '/AshVehicle-site/models/F-35.gltf',
+    'F-35': '/AshVehicle-site/models/f35.gltf',
     'F-117': '/AshVehicle-site/models/F-117.gltf',
     'F-18': '/AshVehicle-site/models/f-18.gltf',
     'F-2': '/AshVehicle-site/models/F-2.gltf',
